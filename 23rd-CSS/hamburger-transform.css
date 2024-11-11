@@ -1,0 +1,23 @@
+img{
+  width: 50px;
+}
+#checkbox{
+  display: none;
+}
+.content>p{
+  width: 200px;
+  background-color: aqua;
+  padding: 3px;
+  text-align: center;
+  font-size: 30px;
+}
+.content{
+  position: relative;
+  left: -300px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+#checkbox:checked+.content{
+  transform: translateX(400px);
+}
